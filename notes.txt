@@ -1,0 +1,164 @@
+        Hierbij de antwoorden op jouw vragen:
+1. Implementeer de permission requests volgens https://developer.android.com/training/permissions/requesting.html
+        2. Denk aan benaming van lokale/class variabelen en positie van accolades. Voorbeeld van inconsistentie in variabel namen: CallButton, popupButton, mToolbar
+        3. En onnodige witruimte
+
+        Zou je daarnaast onderstaande punten kunnen aanpassen:
+        1. Geen consistent gebruik van conventies
+        2. Views hebben geen duidelijke namen (button2, textView5, etc)
+3. Locatie permission request werkt niet (getest op Samsung S7, Android 7.0)
+
+        Over punt 2: dit is nu wel gefixed maar de variabelen waarin deze views gebruikt worden zijn nog steeds slecht benaamd.
+
+
+class CamelCase
+function camelCase
+variables camel_case
+
+///////////////////////////////////////////////////////////////////
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mikew.rsr.MapsActivity" />
+
+/////////////////////////////////////////////////////////////////
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5"
+        android:background="@android:color/background_dark"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="248dp"
+        android:layout_height="188dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="88dp"
+            android:layout_height="15dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/main_btn_close"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/cancel"
+            android:textColor="@android:color/background_light"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.8"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Button
+                android:id="@+id/popup_call_button"
+                android:layout_width="216dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@drawable/main_btn_phone"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/maps_popup_callbutton"
+                android:textColor="@android:color/background_light"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.583"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/popup_text_top"
+                android:layout_width="87dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/maps_popup_title"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/popup_text_bottom"
+                android:layout_width="161dp"
+                android:layout_height="51dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/maps_popup_text"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/button7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                tools:alpha="1" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+/////////////////////////////////////////////////
+
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="309dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@android:color/background_light"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/main_btn_tel"
+        android:text="@string/maps_callbutton1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />

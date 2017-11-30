@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RSR</string>
+    <string name="title">RSR Revalidatieservice</string>
+    <string name="show_info">over RSR</string>
+    <string name="main_button">RSR Pechhulp</string>
+    <string name="dialog_message">RSR pechhulp heeft toegang tot uw locatie nodig. Schakel locatietoegang in.</string>
+    <string name="dialog_title">Locatieservice uigeschakeld</string>
+    <string name="ok">Ga naar instellinen</string>
+    <string name="cancel">Annuleren</string>
+    <string name="info_title">Over RSR</string>
+    <string name="info_content_top">Met de hulpmiddelen van RSR blijft u mobiel. RSR is de leverancier van hulpmiddelen in de regio Noordoost-Nederland. Gedegen kennis en jarenlange ervaring zit in ons DNA verweven en leidt tot het beste advies.</string>
+    <string name="info_content_bottom">Wilt u meer weten over onze producten en diensten, kijk dan op <a href="http://www.rsr.nl">www.rsr.nl</a> of bezoek onze showrooms in Silvolde en Nieuwleusen. We zijn iedere werkdag geopend van 8:00 tot 17:00 uur. Hier kunt u diversen hulpmiddelen uitproberen en rustig bekijken wat goed bij uw situatie aansluit. Samen met u zoeken we naar het hulpmiddel dat bij u past. RSR maakt mensen mobiel.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="maps_title">RSR Pechhulp</string>
+    <string name="maps_infobox_title">Uw locatie:</string>
+    <string name="maps_infobox_locationinfo"></string>
+    <string name="maps_infobox_text">Onthoud deze locatie voor het telefoongesprek.</string>
+    <string name="maps_callbutton1">Bel RSR nu</string>
+    <string name="maps_popup_title">Belkosten</string>
+    <string name="maps_popup_text">Voor dit nummer betaalt u uw gebruikenlijke belkosten</string>
+    <string name="maps_popup_callbutton">Bel nu</string>
+</resources>
